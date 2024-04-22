@@ -1,0 +1,995 @@
+/* 
+Author(s) - Tharin Sandipa - 103166002, Liam Ely - 103964701
+*/
+
+* {
+    /* Makes the default font color white */
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../Images/Night_Sky-Star.png");
+    background-color: black;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textcenter {
+    text-align: center !important;
+}
+
+.sameline {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+section {
+    animation: Fade-In 3s linear 1;
+}
+
+.text-gradient {
+    /* If browser doesn't support clipping text then defaults to this */
+    color: purple !important;
+}
+
+@supports(background-clip: text) {
+    /* Checks if the current browser supports a specific feature */
+    .text-gradient {
+        /* Not supported in chrome */
+        background-clip: text;
+        background-image: linear-gradient(-165deg, blue, purple);
+        color: transparent !important;
+    }
+}
+
+.header-title {
+    text-align: center;
+    font: 50px 'Open Sans' !important;
+    font-weight: bolder !important;
+    text-shadow: 2px 8px 6px #00000033, 0px -5px 35px #ffffff4d, 2px 2px 2px #daa52000;
+}
+
+.black-font {
+    color: #000000 !important;
+}
+
+/* Login Page Components */
+
+.log-button {
+    display: inline-block;
+    margin-left: auto;
+    text-decoration: none;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    border: 1px solid #1b1b1b;
+}
+
+/* Login Page Components */
+
+
+/* Enhancement Page Components */
+
+.go-button {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    border: 1px solid #1b1b1b;
+    text-decoration: none;
+    animation: Round-The-World 1s linear forwards infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Enhancement Page Components */
+
+/*footer {
+    position: fixed !important;
+    bottom: 0;
+}*/
+
+/* Form Design */
+
+.form-button {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.fill-in-blank {
+    width: 20% !important;
+}
+
+.text-area {
+    width: 50% !important;
+}
+
+input[type=text] {
+    display: inline-block !important;
+}
+
+.text-area,
+input[type=text],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #919191;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #1b1b1b;
+}
+
+input[type=submit],
+input[type=reset]{
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    border: 1px solid #1b1b1b;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #daa520;
+    animation: Round-The-World 1s linear forwards infinite;
+}
+
+
+/* Form Design */
+
+
+/* General Classes Start */
+
+.banner-background {
+    background-color: #0e0e0e !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.stay-at-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* General Classes End */
+
+
+/* Footer Buttons Start */
+
+.owner-button,
+.git-button {
+    border: 1px solid #ffc403;
+    border-radius: 10px;
+    background-color: #000000 !important;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px !important;
+    clear: right;
+    float: right;
+    margin-top: 5px;
+    padding: 2px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.owner-button {
+    margin-left: auto;
+}
+
+.git-button {
+    clear: left;
+    float: left;
+}
+
+.footer {
+    font-size: small !important;
+    margin-top: auto;
+    color: #ffffff !important;
+    height: 2.5em;
+    font-style: italic !important;
+    width: 100vw !important;
+    overflow: hidden !important;
+}
+
+
+/* Footer Buttons End */
+
+
+/* Icons Start */
+
+.youtube-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 70px;
+    background-color: #050505f2;
+    border-radius: 30px;
+    border: 1px solid black;
+    animation: Round-The-World 1s linear forwards infinite;
+}
+
+.youtube-triangle {
+    display: block;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #ff0000;
+    border-bottom: 10px solid transparent;
+    animation: Youtube-Button 3s linear forwards infinite;
+}
+
+.youtube-button:hover {
+    background-color: #0e0e0e;
+}
+
+
+/* Icons End */
+
+
+/* Banner Start */
+
+.banner-settings {
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif !important;
+    font-size: 1.5em;
+    color: #FFFF !important;
+    text-shadow: 0 0 8px #FFFFFF;
+}
+
+.logo {
+    max-width: 12%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figure {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.Moz {
+    background-color: #adff2f;
+    animation: LightSwitch 2s cubic-bezier(0.56, 1.66, 1, 1) forwards infinite;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #daa520 !important;
+}
+
+
+/* Banner End */
+
+.fieldset-border {
+    border: 2px solid #1b1b1b;
+    border-radius: 15px;
+}
+
+.fieldset-settings {
+    border: none;
+}
+
+.author {
+    color: #daa520 !important;
+    text-decoration: none;
+}
+
+.font-general {
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headings {
+    text-align: center;
+    padding: 30px;
+}
+
+.paragraph {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.para-heading {
+    padding: 25px;
+}
+
+span {
+    padding-right: 20px;
+}
+
+.fig-caption {
+    padding-left: 121px;
+}
+
+.caption {
+    text-align: center;
+}
+
+
+/* Table Start */
+
+.table-general {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+td,
+th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.table-fx {
+    border-color: #ffffff;
+    box-shadow: 0 0 8px #ffffff;
+    text-shadow: 0 0 8px #ffffff;
+}
+
+.table-border {
+    border: 2px solid #ffffff;
+    border-collapse: collapse;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.color-r {
+    border-color: #f08080;
+    box-shadow: 0 0 8px #f08080;
+    text-shadow: 0 0 8px #f08080;
+}
+
+.color-g {
+    border-color: #90ee90;
+    text-shadow: 0 0 8px #90ee90;
+    box-shadow: 0 0 8px #90ee90;
+}
+
+.color-b {
+    border-color: #add8e6;
+    text-shadow: 0 0 8px #add8e6;
+    box-shadow: 0 0 8px #add8e6;
+}
+
+
+/* Table End */
+
+
+/* Menu Button Settings Start */
+
+.navbar {
+    position: fixed;
+}
+
+.navbar-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+}
+
+.navbar-item {
+    width: max-content;
+}
+
+.navbar-item:last-child {
+    margin-left: auto;
+}
+
+.banner-background {
+    background-color: #0e0e0e !important;
+}
+
+.user-button {
+    align-items: flex-end;
+}
+
+.button {
+    width: max-content;
+    padding: 25px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.active {
+    background-color: #daa520;
+    color: #000000 !important;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff !important;
+    margin: 6px 0;
+}
+
+
+/* Menu Button Settings End */
+
+
+/* Grid (Table) */
+
+.grid-table-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-table-item1 {
+    grid-area: Title1;
+}
+
+.grid-table-item2 {
+    grid-area: Title2;
+}
+
+.grid-table-item3 {
+    grid-area: Table1;
+}
+
+.grid-table-item4 {
+    grid-area: Table2;
+}
+
+
+/* Grid */
+
+.grid-section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "Title Title Title" "Text1 Text1 Text1" "Table1 Table1 Table1" "Text2 Text2 Text2";
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-section-item1 {
+    grid-area: Title;
+}
+
+.grid-section-item2 {
+    grid-area: Text1;
+}
+
+.grid-section-item3 {
+    grid-area: Table1;
+}
+
+.grid-section-item4 {
+    grid-area: Text2;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    /* Large Screens */
+    /* Fonts and Text */
+    .headings {
+        font-size: 3em !important;
+    }
+    .font-general {
+        font-size: 1.2em;
+    }
+    /* Fonts and Text */
+    /* General */
+    .general-settings {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* General */
+    /* Form */
+    input[type=submit],
+    input[type=reset] {
+        width: 100% !important;
+    }
+    /* Form */
+    /* Table Grid */
+    .grid-table-container {
+        grid-template-areas: "Title1 Title2" "Table1 Table2";
+        column-gap: 50px;
+    }
+    /* Table Grid */
+    /* Navbar */
+    .navbar {
+        width: 100vw;
+        height: 5rem !important;
+    }
+    .button:hover {
+        /* width: 96%; */
+        background-color: #daa520 !important;
+    }
+    .button {
+        font-size: 1.2em !important;
+    }
+    .desktop-text {
+        display: block;
+    }
+    .mobile-text {
+        display: none;
+    }
+    /* Navbar */
+    .mobile-padding {
+        margin-top: 90px;
+    }
+    /* Topic Page */
+    aside {
+        width: 30vw !important;
+        float: right;
+        padding: 30px;
+    }
+    /* Topic Page */
+    /* Special Letters - Intro Page */
+    .special-letter-container-top,
+    .special-letter-container-bottom {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 25px;
+    }
+    .special-letter-container-top span {
+        display: inline-block;
+        transform-origin: bottom center;
+        font: 30px Monaco, MonoSpace !important;
+    }
+    .special-letter-container-bottom span {
+        display: inline-block;
+        transform-origin: top center;
+        font: 30px Monaco, MonoSpace !important;
+    }
+    /* Index page curved letter art using transform reference - https://www.geeksforgeeks.org/how-to-create-a-curve-text-using-css3-canvas/ */
+    .Letter1 {
+        transform: translate(78px, 222px) rotate(-90deg);
+    }
+    .Letter2 {
+        transform: translate(44px, 181px) rotate(-81deg);
+    }
+    .Letter3 {
+        transform: translate(20px, 135px) rotate(-70deg);
+    }
+    .Letter4 {
+        transform: translate(9px, 96px) rotate(-52deg);
+    }
+    .Letter5 {
+        transform: translate(2px, 64px) rotate(-40deg);
+    }
+    .Letter6 {
+        transform: translate(0px, 43px) rotate(-24deg);
+    }
+    .Letter7 {
+        transform: translate(0px, 27px) rotate(-17deg);
+    }
+    .Letter8 {
+        transform: translate(0px, 22px) rotate(-4deg);
+    }
+    .Letter9 {
+        transform: translate(26px, 24px) rotate(1deg);
+    }
+    .Letter10 {
+        transform: translate(20px, 37px) rotate(17deg);
+    }
+    .Letter11 {
+        transform: translate(25px, 59px) rotate(24deg);
+    }
+    .Letter12 {
+        transform: translate(17px, 92px) rotate(40deg);
+    }
+    .Letter13 {
+        transform: translate(6px, 130px) rotate(52deg);
+    }
+    .Letter14 {
+        transform: translate(-18px, 170px) rotate(70deg);
+    }
+    .Letter15 {
+        transform: translate(-48px, 211px) rotate(81deg);
+    }
+    .Letter16 {
+        transform: translate(-89px, 245px) rotate(90deg);
+    }
+    .Letter17 {
+        transform: translate(85px, -140px) rotate(60deg);
+    }
+    .Letter18 {
+        transform: translate(63px, -109px) rotate(52deg);
+    }
+    .Letter19 {
+        transform: translate(44px, -81px) rotate(48deg);
+    }
+    .Letter20 {
+        transform: translate(31px, -60px) rotate(37deg);
+    }
+    .Letter21 {
+        transform: translate(16px, -47px) rotate(24deg);
+    }
+    .Letter22 {
+        transform: translate(8px, -32px) rotate(19deg);
+    }
+    .Letter23 {
+        transform: translate(0px, -24px) rotate(9deg);
+    }
+    .Letter24 {
+        transform: translate(0px, -22px) rotate(0deg);
+    }
+    .Letter25 {
+        transform: translate(0px, -25px) rotate(-7deg);
+    }
+    .Letter26 {
+        transform: translate(-8px, -36px) rotate(-22deg);
+    }
+    .Letter27 {
+        transform: translate(-16px, -52px) rotate(-32deg);
+    }
+    .Letter28 {
+        transform: translate(-29px, -70px) rotate(-38deg);
+    }
+    .Letter29 {
+        transform: translate(-43px, -94px) rotate(-44deg);
+    }
+    .Letter30 {
+        transform: translate(-61px, -122px) rotate(-49deg);
+    }
+    .Letter31 {
+        transform: translate(-86px, -150px) rotate(-57deg);
+    }
+    /* Special Letters - Intro Page */
+}
+
+@media screen and (max-width: 600px) {
+    /* Small Screens */
+    /* Fonts and Text */
+    header {
+        position: fixed;
+        top: 0;
+    }
+    .headings {
+        font-size: 1.5em !important;
+        padding: 0;
+    }
+    .font-general {
+        font-size: 1em;
+    }
+    /* Fonts and Text */
+    /* General */
+    main {
+        margin-left: 4.5rem;
+        padding: 1rem;
+    }
+    .width-settings {
+        width: 90vw !important;
+    }
+    /* General */
+    /* Form */
+    .span {
+        padding-right: 13px;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+        width: 85%;
+    }
+    /* Form */
+    /* Table Grid */
+    .grid-table-container {
+        display: grid;
+        grid-template-areas: "Title1 Title1" "Table1 Table1" "Title2 Title2" "Table2 Table2";
+        overflow: hidden;
+        overflow-x: auto;
+        border: none;
+    }
+    /* Table Grid */
+    /* Navbar */
+    .navbar {
+        width: 4rem !important;
+        height: 100vh !important;
+    }
+    .navbar-container {
+        width: 100vw;
+    }
+    .navbar-item {
+        width: 5rem;
+    }
+    .button {
+        font-size: 1em !important;
+    }
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .desktop-text {
+        display: none;
+    }
+    .mobile-text {
+        display: block;
+        text-align: center !important;
+    }
+    .button {
+        padding: 40px 15px !important;
+        font-family: Georgia, serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5em !important;
+    }
+    /* Navbar */
+    /* Table */
+    /* horizontal scrollbar for tables if mobile screen */
+    .table-mobile {
+        overflow-x: auto !important;
+        display: block !important;
+        border: none !important;
+    }
+    /* Table */
+    /* Topic Page */
+    .Moz {
+        width: 90%;
+    }
+    /* Topic Page */
+    /* Index Page */
+    .mobile-index-title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .logo {
+        max-width: 46%;
+    }
+    .mobile-padding {
+        margin-top: 50px;
+    }
+    /* Index Page */
+    /* Special Letters - Intro Page */
+    .special-letter-container-top,
+    .special-letter-container-bottom {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .special-letter-container-top span {
+        display: inline-block;
+        transform-origin: bottom center;
+        font: 18px Monaco, MonoSpace !important;
+    }
+    .special-letter-container-bottom span {
+        display: inline-block;
+        transform-origin: top center;
+        font: 18px Monaco, MonoSpace !important;
+    }
+    /* Index page curved letter art using transform reference - https://www.geeksforgeeks.org/how-to-create-a-curve-text-using-css3-canvas/ */
+    .Letter1,
+    .Letter2,
+    .Letter3,
+    .Letter4,
+    .Letter5,
+    .Letter6,
+    .Letter7,
+    .Letter8 {
+        transform: translate(83px, 46px);
+    }
+    .Letter9 {
+        /* 89 */
+        transform: translate(86px, 189px) rotate(90deg);
+    }
+    .Letter10 {
+        /* 109 */
+        transform: translate(52px, 209px) rotate(90deg);
+    }
+    .Letter11 {
+        /* 129 */
+        transform: translate(18px, 229px) rotate(90deg);
+    }
+    .Letter12 {
+        /* 149 */
+        transform: translate(-16px, 249px) rotate(90deg);
+    }
+    .Letter13 {
+        /* 147 */
+        transform: translate(221px, 247px) rotate(90deg);
+    }
+    .Letter14 {
+        /* 166 */
+        transform: translate(187px, 266px) rotate(90deg);
+    }
+    .Letter15 {
+        /* 183 */
+        transform: translate(153px, 283px) rotate(90deg);
+    }
+    .Letter16 {
+        /* 197 */
+        transform: translate(120px, 297px) rotate(90deg);
+    }
+    .Letter17,
+    .Letter18,
+    .Letter19,
+    .Letter20,
+    .Letter21,
+    .Letter22,
+    .Letter23 {
+        transform: translate(92px, -28px);
+    }
+    .Letter24 {
+        transform: translate(-237px, -127px) rotate(-90deg);
+    }
+    .Letter25 {
+        transform: translate(-271px, -153px) rotate(-90deg);
+    }
+    .Letter26 {
+        transform: translate(-306px, -178px) rotate(-90deg);
+    }
+    .Letter27 {
+        transform: translate(-340px, -202px) rotate(-90deg);
+    }
+    .Letter28 {
+        transform: translate(-374px, -225px) rotate(-90deg);
+    }
+    .Letter29 {
+        transform: translate(-155px, -268px) rotate(-90deg);
+    }
+    .Letter30 {
+        transform: translate(-188px, -287px) rotate(-90deg);
+    }
+    .Letter31 {
+        transform: translate(-220px, -306px) rotate(-90deg);
+    }
+    /* Special Letters - Intro Page */
+    .stay-at-bottom {
+        position: relative;
+    }
+}
+
+
+/* Media Queries */
+
+
+/* Animation Key Frames */
+
+@keyframes Youtube-Button {
+    /* Animation for the middle triangle in the youtube icon will pulse red and black to give a heart pulse effect */
+    0% {
+        border-left-color: #ff0000;
+    }
+    10% {
+        border-left-color: #8b0000;
+    }
+    20% {
+        border-left-color: #610000;
+    }
+    30% {
+        border-left-color: #3a0000;
+    }
+    40% {
+        border-left-color: #1d0000;
+    }
+    50% {
+        border-left-color: #000000;
+    }
+    60% {
+        border-left-color: #1d0000;
+    }
+    70% {
+        border-left-color: #3a0000;
+    }
+    80% {
+        border-left-color: #610000;
+    }
+    90% {
+        border-left-color: #8b0000;
+    }
+    100% {
+        border-left-color: #ff0000;
+    }
+}
+
+@keyframes Fade-In {
+    /* Key frames for the animation Fade-In that slowly transitions from 0 opacity to fully visible */
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes LightSwitch {
+    /* Key frames for the animation LigthSwitch that mickics a on and off effect with a green and white background */
+    0% {
+        background-color: #75ff5d;
+    }
+    10% {
+        background-color: #ffffff;
+    }
+    20% {
+        background-color: #ffffff;
+    }
+    30% {
+        background-color: #39FF14;
+    }
+    40% {
+        background-color: #39FF14;
+    }
+    50% {
+        background-color: #ffffff;
+    }
+    60% {
+        background-color: #39FF14;
+    }
+    70% {
+        background-color: #ffffff;
+    }
+    80% {
+        background-color: #39FF14;
+    }
+    90% {
+        background-color: #ffffff;
+    }
+    100% {
+        background-color: #75ff5d;
+    }
+}
+
+@keyframes Round-The-World {
+    /* Gives the effect of trailing light going around the border of element */
+    0% {
+        border-color: #000000;
+        border-bottom-color: silver;
+    }
+    25% {
+        border-color: #000000;
+        border-right-color: silver;
+    }
+    75% {
+        border-color: #000000;
+        border-top-color: silver;
+    }
+    100% {
+        border-color: #000000;
+        border-left-color: silver;
+    }
+}
+
+
+/* Animation Key Frames */
